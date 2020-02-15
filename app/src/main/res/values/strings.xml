@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My_trening</string>
+    <string name="click_here">Нажми сюда</string>
+    <string name="Quantity_clicks_button">Количество повторов!</string>
+    <string name="click_for_zero">Обнулить</string>
+    <string name="click_for_timer">Начать тренировку</string>
+    <string name="click_for_timer_zero">Обнулить время тренировки</string>
+    <string name="Name">Твоя тренировка</string>
+</resources>

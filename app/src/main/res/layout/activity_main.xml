@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/preview"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/Quantity_clicks_button"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tablo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text=""
+        android:textSize="60sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/preview"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tablo_time_trening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:00:00"
+        android:textSize="60sp"
+        app:layout_constraintTop_toBottomOf="@id/Button_for_click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Button_for_click"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="@string/click_here"
+        app:layout_constraintEnd_toStartOf="@+id/Button_for_zero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/preview"></Button>
+
+    <Button
+        android:id="@+id/Button_for_zero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/click_for_zero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Button_for_click"
+        app:layout_constraintTop_toTopOf="@id/Button_for_click"></Button>
+
+
+    <Button
+        android:id="@+id/Button_for_timer"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:text="@string/click_for_timer"
+        app:layout_constraintTop_toBottomOf="@id/tablo_time_trening"
+        app:layout_constraintStart_toStartOf="parent"></Button>
+
+    <Button
+        android:id="@+id/Button_for_timer_zero"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:text="@string/click_for_timer_zero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Button_for_timer"
+        app:layout_constraintTop_toTopOf="@id/Button_for_timer"></Button>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
